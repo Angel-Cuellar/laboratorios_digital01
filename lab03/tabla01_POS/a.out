@@ -1,0 +1,103 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000008aabe0 .scope module, "pruenbaPOStabla1" "pruenbaPOStabla1" 2 1;
+ .timescale 0 0;
+L_0000000001002a40 .functor NOT 1, v00000000008ac870_0, C4<0>, C4<0>, C4<0>;
+L_000000000107bc00 .functor NOT 1, v00000000008ac910_0, C4<0>, C4<0>, C4<0>;
+L_000000000107bc70 .functor NOT 1, v00000000008ac9b0_0, C4<0>, C4<0>, C4<0>;
+L_000000000107bce0 .functor OR 1, v00000000008ac870_0, v00000000008ac910_0, L_000000000107bc70, C4<0>;
+L_000000000107bd50 .functor OR 1, v00000000008ac870_0, L_000000000107bc00, L_000000000107bc70, C4<0>;
+L_000000000107bdc0 .functor OR 1, L_0000000001002a40, L_000000000107bc00, v00000000008ac9b0_0, C4<0>;
+L_000000000107be30 .functor AND 1, L_000000000107bce0, L_000000000107bd50, L_000000000107bdc0, C4<1>;
+v00000000008ac870_0 .var "A", 0 0;
+v00000000008ac910_0 .var "B", 0 0;
+v00000000008ac9b0_0 .var "C", 0 0;
+v00000000008aca50_0 .net "out", 0 0, L_000000000107be30;  1 drivers
+v000000000107b840_0 .net "w01", 0 0, L_0000000001002a40;  1 drivers
+v000000000107b8e0_0 .net "w02", 0 0, L_000000000107bc00;  1 drivers
+v000000000107b980_0 .net "w03", 0 0, L_000000000107bc70;  1 drivers
+v000000000107ba20_0 .net "w1", 0 0, L_000000000107bce0;  1 drivers
+v000000000107bac0_0 .net "w2", 0 0, L_000000000107bd50;  1 drivers
+v000000000107bb60_0 .net "w3", 0 0, L_000000000107bdc0;  1 drivers
+    .scope S_00000000008aabe0;
+T_0 ;
+    %vpi_call 2 14 "$display", "A B C | Y" {0 0 0};
+    %vpi_call 2 15 "$display", "------|--" {0 0 0};
+    %vpi_call 2 16 "$monitor", "%b %b %b | %b", v00000000008ac870_0, v00000000008ac910_0, v00000000008ac9b0_0, v00000000008aca50_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac870_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac910_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000008ac9b0_0, 0, 1;
+    %delay 1, 0;
+    %vpi_call 2 25 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_00000000008aabe0;
+T_1 ;
+    %vpi_call 2 29 "$dumpfile", "codigoPOStabla1_tb.vcd" {0 0 0};
+    %vpi_call 2 30 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000000008aabe0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "codigoPOStabla1.v";
