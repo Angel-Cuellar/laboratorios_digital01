@@ -1,0 +1,635 @@
+$date
+	Sun Aug 09 21:46:42 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! s8 $end
+$var wire 1 " s7 $end
+$var wire 1 # s6 $end
+$var wire 1 $ s5 $end
+$var wire 1 % s4 $end
+$var wire 1 & s3 $end
+$var wire 1 ' s2 $end
+$var wire 1 ( s1 $end
+$var reg 1 ) a1 $end
+$var reg 1 * a2 $end
+$var reg 1 + a3 $end
+$var reg 1 , b1 $end
+$var reg 1 - b2 $end
+$var reg 1 . b3 $end
+$var reg 1 / c1 $end
+$var reg 1 0 c2 $end
+$var reg 1 1 c3 $end
+$var reg 1 2 c4 $end
+$var reg 1 3 d1 $end
+$var reg 1 4 d2 $end
+$var reg 1 5 d3 $end
+$var reg 1 6 d4 $end
+$var reg 1 7 e1 $end
+$var reg 1 8 e2 $end
+$var reg 1 9 e3 $end
+$var reg 1 : e4 $end
+$var reg 1 ; f1 $end
+$var reg 1 < f2 $end
+$var reg 1 = f3 $end
+$var reg 1 > g1 $end
+$var reg 1 ? g2 $end
+$var reg 1 @ g3 $end
+$var reg 1 A g4 $end
+$var reg 1 B h1 $end
+$var reg 1 C h2 $end
+$var reg 1 D h3 $end
+$scope module m1 $end
+$var wire 1 ) A $end
+$var wire 1 * B $end
+$var wire 1 + C $end
+$var wire 1 ( Y $end
+$var wire 1 E notA $end
+$var wire 1 F notB $end
+$var wire 1 G notC $end
+$var wire 1 H w1 $end
+$var wire 1 I w2 $end
+$var wire 1 J w3 $end
+$var wire 1 K w4 $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 , A $end
+$var wire 1 - B $end
+$var wire 1 . C $end
+$var wire 1 ' Y $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 / A $end
+$var wire 1 0 B $end
+$var wire 1 1 C $end
+$var wire 1 2 D $end
+$var wire 1 & Y $end
+$var wire 1 L notA $end
+$var wire 1 M notB $end
+$var wire 1 N notC $end
+$var wire 1 O notD $end
+$var wire 1 P w1 $end
+$var wire 1 Q w2 $end
+$var wire 1 R w3 $end
+$var wire 1 S w4 $end
+$var wire 1 T w5 $end
+$var wire 1 U w6 $end
+$var wire 1 V w7 $end
+$var wire 1 W w8 $end
+$upscope $end
+$scope module m4 $end
+$var wire 1 3 A $end
+$var wire 1 4 B $end
+$var wire 1 5 C $end
+$var wire 1 6 D $end
+$var wire 1 % Y $end
+$var wire 1 X notB $end
+$var wire 1 Y notC $end
+$var wire 1 Z notD $end
+$var wire 1 [ w1 $end
+$var wire 1 \ w2 $end
+$var wire 1 ] w3 $end
+$var wire 1 ^ w4 $end
+$upscope $end
+$scope module n1 $end
+$var wire 1 7 A $end
+$var wire 1 8 B $end
+$var wire 1 9 C $end
+$var wire 1 : D $end
+$var wire 1 $ Y $end
+$upscope $end
+$scope module n2 $end
+$var wire 1 ; A $end
+$var wire 1 < B $end
+$var wire 1 = C $end
+$var wire 1 # Y $end
+$upscope $end
+$scope module n3 $end
+$var wire 1 > A $end
+$var wire 1 ? B $end
+$var wire 1 @ C $end
+$var wire 1 A D $end
+$var wire 1 " Y $end
+$upscope $end
+$scope module n4 $end
+$var wire 1 B A $end
+$var wire 1 C B $end
+$var wire 1 D C $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xP
+xO
+xN
+xM
+xL
+0K
+0J
+1I
+1H
+1G
+1F
+1E
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+0+
+0*
+0)
+1(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#1
+0(
+0H
+0I
+0G
+1+
+#2
+1(
+1I
+1G
+0F
+0+
+1*
+#3
+0(
+0I
+0G
+1+
+#4
+1(
+1H
+1K
+1G
+1F
+0E
+0+
+0*
+1)
+#5
+0H
+0G
+1J
+1+
+#6
+0(
+0K
+1G
+0J
+0F
+0+
+1*
+#7
+1(
+0G
+1J
+1+
+#10
+1'
+0.
+0-
+0,
+#11
+1.
+#12
+0'
+0.
+1-
+#13
+1.
+#14
+1'
+0.
+0-
+1,
+#15
+1.
+#16
+0'
+0.
+1-
+#17
+1.
+#19
+1&
+1P
+1O
+1N
+0Q
+1M
+0R
+0S
+1L
+0T
+0U
+0V
+0W
+02
+01
+00
+0/
+#20
+0&
+0P
+0O
+12
+#21
+1O
+0N
+02
+11
+#22
+1&
+0O
+1Q
+12
+#23
+0&
+1O
+1N
+0Q
+0M
+02
+01
+10
+#24
+1&
+0O
+1R
+12
+#25
+1&
+1S
+1O
+0R
+0N
+02
+11
+#26
+0&
+0S
+0O
+12
+#27
+1O
+1N
+1M
+0L
+02
+01
+00
+1/
+#28
+1&
+0O
+1V
+12
+#29
+1&
+1W
+1O
+0V
+0N
+02
+11
+#30
+0&
+0W
+0O
+12
+#31
+1&
+1T
+1O
+1N
+0M
+02
+01
+10
+#32
+0&
+0T
+0O
+12
+#33
+1O
+0N
+02
+11
+#34
+1&
+0O
+1U
+12
+#38
+1%
+1^
+1Z
+1Y
+1X
+0\
+0[
+0]
+06
+05
+04
+03
+#39
+0%
+0^
+0Z
+16
+#40
+1Z
+0Y
+06
+15
+#41
+0Z
+16
+#42
+1Z
+1Y
+0X
+06
+05
+14
+#43
+1%
+0Z
+1\
+16
+#44
+0%
+1Z
+0\
+0Y
+06
+15
+#45
+1%
+0Z
+1\
+16
+#46
+1^
+1%
+1Z
+1Y
+1X
+0\
+06
+05
+04
+13
+#47
+0%
+0^
+0Z
+16
+#48
+1%
+1Z
+0Y
+1[
+06
+15
+#49
+0Z
+16
+#50
+1Z
+1Y
+0[
+0X
+1]
+06
+05
+14
+#51
+0Z
+1\
+16
+#52
+1Z
+0\
+0Y
+1[
+06
+15
+#53
+0Z
+1\
+16
+#57
+1$
+0:
+09
+08
+07
+#58
+1:
+#59
+0:
+19
+#60
+1:
+#61
+0:
+09
+18
+#62
+1:
+#63
+1$
+0:
+19
+#64
+0$
+1:
+#65
+1$
+0:
+09
+08
+17
+#66
+1:
+#67
+0:
+19
+#68
+1:
+#69
+0:
+09
+18
+#70
+1:
+#71
+1$
+0:
+19
+#72
+0$
+1:
+#76
+1#
+0=
+0<
+0;
+#77
+1=
+#78
+0#
+0=
+1<
+#79
+1#
+1=
+#80
+1#
+0=
+0<
+1;
+#81
+1=
+#82
+0=
+1<
+#83
+1=
+#85
+1"
+0A
+0@
+0?
+0>
+#86
+1A
+#87
+0"
+0A
+1@
+#88
+1A
+#89
+0A
+0@
+1?
+#90
+1A
+#91
+0A
+1@
+#92
+1A
+#93
+0A
+0@
+0?
+1>
+#94
+1"
+1A
+#95
+0"
+0A
+1@
+#96
+1"
+1A
+#97
+0"
+0A
+0@
+1?
+#98
+1"
+1A
+#99
+0"
+0A
+1@
+#100
+1"
+1A
+#104
+1!
+0D
+0C
+0B
+#105
+0!
+1D
+#106
+0D
+1C
+#107
+1!
+1D
+#108
+0!
+0D
+0C
+1B
+#109
+1D
+#110
+0D
+1C
+#111
+1!
+1D
+#115
