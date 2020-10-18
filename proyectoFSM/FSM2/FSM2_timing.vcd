@@ -1,0 +1,347 @@
+$date
+	Sat Oct 17 21:45:10 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! S2F $end
+$var wire 1 " S2 $end
+$var wire 1 # S1F $end
+$var wire 1 $ S1 $end
+$var wire 1 % S0F $end
+$var wire 1 & S0 $end
+$var wire 1 ' CC2 $end
+$var wire 1 ( CC1 $end
+$var wire 1 ) CC0 $end
+$var reg 1 * C $end
+$var reg 1 + E $end
+$var reg 1 , F $end
+$var reg 1 - G $end
+$var reg 1 . J $end
+$var reg 1 / K $end
+$var reg 1 0 L $end
+$var reg 1 1 M0 $end
+$var reg 1 2 M1 $end
+$var reg 1 3 clk $end
+$var reg 1 4 reset $end
+$scope module U1 $end
+$var wire 1 * C $end
+$var wire 1 ) CC0 $end
+$var wire 1 ( CC1 $end
+$var wire 1 ' CC2 $end
+$var wire 1 + E $end
+$var wire 1 , F $end
+$var wire 1 - G $end
+$var wire 1 . J $end
+$var wire 1 / K $end
+$var wire 1 0 L $end
+$var wire 1 1 M0 $end
+$var wire 1 2 M1 $end
+$var wire 1 & S0 $end
+$var wire 1 % S0F $end
+$var wire 1 5 S0_F $end
+$var wire 1 $ S1 $end
+$var wire 1 # S1F $end
+$var wire 1 6 S1_F $end
+$var wire 1 " S2 $end
+$var wire 1 ! S2F $end
+$var wire 1 7 S2_F $end
+$var wire 1 3 clk $end
+$var wire 1 4 reset $end
+$var wire 1 8 S_2 $end
+$var wire 1 9 S_1 $end
+$var wire 1 : S_0 $end
+$scope module E0 $end
+$var wire 1 5 D $end
+$var wire 1 3 clk $end
+$var wire 1 4 reset $end
+$var reg 1 : Q $end
+$upscope $end
+$scope module E1 $end
+$var wire 1 6 D $end
+$var wire 1 3 clk $end
+$var wire 1 4 reset $end
+$var reg 1 9 Q $end
+$upscope $end
+$scope module E2 $end
+$var wire 1 7 D $end
+$var wire 1 3 clk $end
+$var wire 1 4 reset $end
+$var reg 1 8 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x:
+x9
+x8
+x7
+x6
+x5
+04
+03
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#5
+0&
+0)
+0:
+0$
+0(
+09
+0"
+0'
+08
+14
+#7
+13
+#14
+03
+#15
+04
+#21
+x&
+x)
+x:
+x$
+x(
+x9
+x"
+x'
+x8
+13
+#28
+03
+#30
+0!
+07
+0%
+05
+0#
+06
+12
+11
+0-
+0*
+0,
+0+
+10
+0/
+0.
+#35
+0"
+0'
+08
+0$
+0(
+09
+0&
+0)
+0:
+13
+#42
+03
+#49
+13
+#50
+1!
+17
+1+
+#56
+03
+#63
+0!
+07
+1"
+1'
+18
+13
+#70
+03
+#75
+1!
+17
+0+
+00
+1/
+#77
+13
+#84
+03
+#91
+13
+#98
+03
+#105
+1#
+16
+0!
+07
+13
+1+
+#112
+03
+#119
+0#
+06
+0"
+0'
+08
+1$
+1(
+19
+13
+#126
+03
+#133
+0$
+0(
+09
+13
+#140
+03
+0+
+10
+#147
+13
+#154
+03
+#161
+13
+#168
+03
+#175
+13
+#180
+1+
+#182
+03
+#189
+13
+#196
+03
+#203
+13
+#210
+03
+#217
+13
+#224
+03
+#225
+0+
+0/
+1.
+#231
+13
+#238
+03
+#245
+13
+#252
+03
+#259
+13
+#266
+03
+#273
+13
+#275
+1+
+00
+#280
+03
+#287
+13
+#294
+03
+#301
+13
+#308
+03
+#315
+13
+#322
+03
+#329
+13
+#330
+0+
+10
+#336
+03
+#343
+13
+#350
+03
+#357
+13
+#364
+03
+#371
+13
+#378
+03
+#385
+13
+#390
+1+
+#392
+03
+#399
+13
+#406
+03
+#413
+13
+#420
+03
+#427
+13
+#434
+03
+#441
+13
+#448
+03
+#455
+13
+0+
+00
+1/
+#462
+03
+#469
+13
+#476
+03
+#483
+13
+#490
+03
+#497
+13
+#500
