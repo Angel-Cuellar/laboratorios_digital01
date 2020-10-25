@@ -1,0 +1,41 @@
+$date
+	Sat Oct 24 20:26:23 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! datos [7:0] $end
+$var reg 12 " localidad [11:0] $end
+$scope module M1 $end
+$var wire 8 # Datos [7:0] $end
+$var wire 12 $ Localidad [11:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b11111111 #
+b0 "
+b11111111 !
+$end
+#1
+b0 !
+b0 #
+b1 "
+b1 $
+#2
+b10101010 !
+b10101010 #
+b10 "
+b10 $
+#3
+b11000011 !
+b11000011 #
+b11 "
+b11 $
+#50

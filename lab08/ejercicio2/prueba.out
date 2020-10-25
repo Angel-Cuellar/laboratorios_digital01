@@ -1,0 +1,68 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000909d20 .scope module, "testbench" "testbench" 2 3;
+ .timescale 0 0;
+v0000000001082730_0 .net "datos", 7 0, L_0000000001082910;  1 drivers
+v00000000010827d0_0 .var "localidad", 11 0;
+S_000000000090a4c0 .scope module, "M1" "ROM" 2 8, 3 1 0, S_0000000000909d20;
+ .timescale 0 0;
+    .port_info 0 /INPUT 12 "Localidad";
+    .port_info 1 /OUTPUT 8 "Datos";
+L_0000000001082910 .functor BUFZ 8, L_0000000001082870, C4<00000000>, C4<00000000>, C4<00000000>;
+v000000000090a040_0 .net "Datos", 7 0, L_0000000001082910;  alias, 1 drivers
+v0000000000909150_0 .net "Localidad", 11 0, v00000000010827d0_0;  1 drivers
+v000000000090a650 .array "Memoria", 4096 0, 7 0;
+v0000000001082550_0 .net *"_s0", 7 0, L_0000000001082870;  1 drivers
+v00000000010825f0_0 .net *"_s2", 13 0, L_000000000090ca40;  1 drivers
+L_00000000010f9848 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0000000001082690_0 .net *"_s5", 1 0, L_00000000010f9848;  1 drivers
+L_0000000001082870 .array/port v000000000090a650, L_000000000090ca40;
+L_000000000090ca40 .concat [ 12 2 0 0], v00000000010827d0_0, L_00000000010f9848;
+    .scope S_000000000090a4c0;
+T_0 ;
+    %vpi_call 3 6 "$readmemb", "Memoria.txt", v000000000090a650 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000000000909d20;
+T_1 ;
+    %vpi_call 2 12 "$display", "memoria ROM" {0 0 0};
+    %vpi_call 2 13 "$display", " localidad  |  dato almacenado" {0 0 0};
+    %vpi_call 2 14 "$monitor", " %b  |  %b  ", v00000000010827d0_0, v0000000001082730_0 {0 0 0};
+    %pushi/vec4 0, 0, 12;
+    %store/vec4 v00000000010827d0_0, 0, 12;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 12;
+    %store/vec4 v00000000010827d0_0, 0, 12;
+    %delay 1, 0;
+    %pushi/vec4 2, 0, 12;
+    %store/vec4 v00000000010827d0_0, 0, 12;
+    %delay 1, 0;
+    %pushi/vec4 3, 0, 12;
+    %store/vec4 v00000000010827d0_0, 0, 12;
+    %end;
+    .thread T_1;
+    .scope S_0000000000909d20;
+T_2 ;
+    %delay 50, 0;
+    %vpi_call 2 25 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0000000000909d20;
+T_3 ;
+    %vpi_call 2 28 "$dumpfile", "memoriaROM_timing.vcd" {0 0 0};
+    %vpi_call 2 29 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000000909d20 {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "memoria_testbench.v";
+    "./memoria.v";
