@@ -1,11 +1,11 @@
-module ROM(input wire [11:0] Localidad, output wire [7:0] Datos); 
+module ROM(input wire [11:0] Localidad, output wire [7:0] program_byte); 
 
 	reg[7:0] Memoria[0:4096];  
 	
 	initial begin 
-		$readmemb("Memoria.txt", Memoria); 
+		$readmemh("Memoria.txt", Memoria); 
 	end 
 	
-	assign Datos = Memoria[Localidad]; 
+	assign program_byte = Memoria[Localidad]; 
 	
 endmodule 
